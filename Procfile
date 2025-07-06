@@ -1,0 +1,1 @@
+web: gunicorn fl_fraud_app:app
