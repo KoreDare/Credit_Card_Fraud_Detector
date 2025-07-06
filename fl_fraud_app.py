@@ -58,9 +58,9 @@ def predict():
         else:
             try:
                 # Manual input
-                time = float(request.form["Time"])
-                amount = float(request.form["Amount"])
-                v_features = [float(request.form[f"V{i}"]) for i in range(1, 29)]
+                time = float(request.form["time"])
+                amount = float(request.form["amount"])
+                v_features = [float(request.form[f"v{i}"]) for i in range(1, 29)]
 
                 # Scale
                 scaled = scaler.transform([[time, amount]])[0]
